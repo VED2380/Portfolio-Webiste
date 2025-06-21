@@ -30,24 +30,24 @@ export function ContactForm() {
 
   if (isSubmitted) {
     return (
-      <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+      <Card className="bg-slate-800/50 border-slate-700">
         <CardContent className="p-8 text-center">
-          <CheckCircle className="w-16 h-16 text-green-400 mx-auto mb-4" />
+          <CheckCircle className="w-16 h-16 text-teal-400 mx-auto mb-4" />
           <h3 className="text-xl font-semibold text-white mb-2">Message Sent!</h3>
-          <p className="text-gray-300">Thank you for reaching out. I'll get back to you soon.</p>
+          <p className="text-slate-300">Thank you for reaching out. I'll get back to you soon.</p>
         </CardContent>
       </Card>
     )
   }
 
   return (
-    <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+    <Card className="bg-slate-800/50 border-slate-700">
       <CardHeader>
         <div className="flex items-center gap-3">
-          <Mail className="w-6 h-6 text-blue-400" />
+          <Mail className="w-6 h-6 text-teal-400" />
           <CardTitle className="text-white">Send me a message</CardTitle>
         </div>
-        <CardDescription className="text-gray-300">I'd love to hear about your project or opportunity</CardDescription>
+        <CardDescription className="text-slate-300">I'd love to hear about your project or opportunity</CardDescription>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -60,7 +60,7 @@ export function ContactForm() {
                 id="name"
                 name="name"
                 required
-                className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 focus:border-blue-400"
+                className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400 focus:border-teal-400"
                 placeholder="Your name"
               />
             </div>
@@ -73,7 +73,7 @@ export function ContactForm() {
                 name="email"
                 type="email"
                 required
-                className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 focus:border-blue-400"
+                className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400 focus:border-teal-400"
                 placeholder="your.email@example.com"
               />
             </div>
@@ -86,7 +86,7 @@ export function ContactForm() {
               id="subject"
               name="subject"
               required
-              className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 focus:border-blue-400"
+              className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400 focus:border-teal-400"
               placeholder="What's this about?"
             />
           </div>
@@ -99,14 +99,14 @@ export function ContactForm() {
               name="message"
               required
               rows={5}
-              className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 focus:border-blue-400 resize-none"
+              className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400 focus:border-teal-400 resize-none"
               placeholder="Tell me about your project or opportunity..."
             />
           </div>
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
+            className="w-full accent-gradient text-white hover:opacity-90 focus-visible:focus"
           >
             {isSubmitting ? (
               <>

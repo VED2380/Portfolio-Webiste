@@ -8,6 +8,7 @@ const navItems = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Experience", href: "#experience" },
+  { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Research", href: "#research" },
   { name: "Contact", href: "#contact" },
@@ -53,7 +54,7 @@ export function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-slate-900/95 backdrop-blur-md shadow-lg" : "bg-transparent"
+        isScrolled ? "bg-slate-900/95 backdrop-blur-md shadow-lg border-b border-slate-800" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -62,7 +63,7 @@ export function Navigation() {
           <div className="flex-shrink-0">
             <button
               onClick={() => scrollToSection("#home")}
-              className="text-2xl font-bold text-white hover:text-blue-400 transition-colors"
+              className="text-2xl font-bold font-heading gradient-text hover:scale-110 transition-transform focus-visible:focus"
               aria-label="Go to home section"
             >
               VA
@@ -76,10 +77,10 @@ export function Navigation() {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 focus-visible:focus ${
                     activeSection === item.href.substring(1)
-                      ? "bg-blue-600 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                      ? "bg-teal-600 text-white shadow-lg"
+                      : "text-slate-300 hover:bg-slate-800 hover:text-teal-400"
                   }`}
                   aria-label={`Navigate to ${item.name} section`}
                 >
@@ -95,7 +96,7 @@ export function Navigation() {
               variant="ghost"
               size="sm"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-400 hover:text-white hover:bg-gray-700"
+              className="text-slate-400 hover:text-white hover:bg-slate-800 focus-visible:focus"
               aria-label="Toggle mobile menu"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -106,15 +107,15 @@ export function Navigation() {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-900/95 backdrop-blur-md rounded-lg mt-2">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-900/95 backdrop-blur-md rounded-lg mt-2 border border-slate-800">
               {navItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                  className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-all duration-200 focus-visible:focus ${
                     activeSection === item.href.substring(1)
-                      ? "bg-blue-600 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                      ? "bg-teal-600 text-white"
+                      : "text-slate-300 hover:bg-slate-800 hover:text-teal-400"
                   }`}
                   aria-label={`Navigate to ${item.name} section`}
                 >
