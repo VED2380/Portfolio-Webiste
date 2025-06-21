@@ -26,19 +26,20 @@ Welcome to my **Personal Portfolio Website** – a fully responsive, minimal, an
 
 ---
 
-## 📁 Folder Structure
 📦 Portfolio-Website
-├── public/
-├── src/
-│   ├── components/
-│   ├── data/
-│   ├── pages/
-│   └── App.jsx
-├── tailwind.config.js
-├── package.json
-└── README.md
-
-
+├── public/                 # Static assets (favicon, images, etc.)
+├── src/                   
+│   ├── assets/             # Custom images, icons, etc.
+│   ├── components/         # Reusable UI components (Navbar, Footer, Cards)
+│   ├── data/               # Data files for skills, projects, etc.
+│   ├── pages/              # Page components (Home, About, Projects)
+│   ├── App.jsx             # Main application component
+│   ├── index.jsx           # Entry point of the React app
+├── .gitignore              # Files and folders to be ignored by Git
+├── tailwind.config.js      # Tailwind CSS configuration
+├── postcss.config.js       # PostCSS config (for Tailwind)
+├── package.json            # Project metadata and dependencies
+├── README.md               # Project overview and documentation
 
 
 
