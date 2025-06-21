@@ -41,14 +41,14 @@ Welcome to my **Personal Portfolio Website** – a fully responsive, minimal, an
 ├── package.json            # Project metadata and dependencies
 ├── README.md               # Project overview and documentation
 
-
+---
 
 🧑‍💻 Author
 Vedant Agnihotri
 Final Year CSE Student | ML & AI Enthusiast
 
 
-
+---
 
 📸 Preview
 ![image](https://github.com/user-attachments/assets/d9a2d183-ff4c-4796-845a-2eb7234505fb)
