@@ -24,8 +24,7 @@ Welcome to my **Personal Portfolio Website** – a fully responsive, minimal, an
 - **EmailJS** – contact form integration
 - **Vercel** – deployment
 
----
-
+```
 📦 Portfolio-Website
 ├── public/                 # Static assets (favicon, images, etc.)
 ├── src/                   
@@ -34,14 +33,13 @@ Welcome to my **Personal Portfolio Website** – a fully responsive, minimal, an
 │   ├── data/               # Data files for skills, projects, etc.
 │   ├── pages/              # Page components (Home, About, Projects)
 │   ├── App.jsx             # Main application component
-│   ├── index.jsx           # Entry point of the React app
+│   └── index.jsx           # Entry point of the React app
 ├── .gitignore              # Files and folders to be ignored by Git
 ├── tailwind.config.js      # Tailwind CSS configuration
 ├── postcss.config.js       # PostCSS config (for Tailwind)
 ├── package.json            # Project metadata and dependencies
-├── README.md               # Project overview and documentation
-
----
+└── README.md               # Project overview and documentation
+```
 
 🧑‍💻 Author
 Vedant Agnihotri
