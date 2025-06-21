@@ -184,7 +184,7 @@ export default function Portfolio() {
               <div className="flex flex-wrap gap-4">
                 <Button
                   onClick={() => scrollToSection("projects")}
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3"
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border-0"
                 >
                   View Projects
                   <ArrowRight className="w-4 h-4 ml-2" />
@@ -192,7 +192,7 @@ export default function Portfolio() {
                 <Button
                   variant="outline"
                   onClick={() => scrollToSection("contact")}
-                  className="border-white/30 text-white hover:bg-white/10 px-8 py-3"
+                  className="border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-8 py-3 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl bg-transparent backdrop-blur-sm"
                 >
                   Get in Touch
                 </Button>
@@ -440,7 +440,7 @@ export default function Portfolio() {
                       <Button
                         variant="outline"
                         size="sm"
-                        className="w-full border-white/30 text-white hover:bg-white/10"
+                        className="w-full border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white transform hover:scale-105 transition-all duration-300 bg-transparent backdrop-blur-sm"
                         onClick={() => window.open(project.github, "_blank")}
                       >
                         <Github className="w-4 h-4 mr-2" />
@@ -483,7 +483,7 @@ export default function Portfolio() {
                       <Button
                         variant="ghost"
                         size="sm"
-                        className="w-full text-gray-400 hover:text-white hover:bg-white/5"
+                        className="w-full text-gray-300 hover:text-white hover:bg-blue-500/20 transform hover:scale-105 transition-all duration-300 border border-gray-600 hover:border-blue-400"
                         onClick={() => window.open(project.github, "_blank")}
                       >
                         <Github className="w-4 h-4 mr-2" />
@@ -553,7 +553,7 @@ export default function Portfolio() {
                   <div className="space-y-4">
                     <Button
                       variant="outline"
-                      className="w-full justify-start border-white/30 text-white hover:bg-white/10"
+                      className="w-full justify-start border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white transform hover:scale-105 transition-all duration-300 bg-transparent backdrop-blur-sm"
                       onClick={() => window.open("mailto:09vedanragnihotri@gmail.com", "_blank")}
                     >
                       <Mail className="w-5 h-5 mr-3" />
@@ -562,7 +562,7 @@ export default function Portfolio() {
 
                     <Button
                       variant="outline"
-                      className="w-full justify-start border-white/30 text-white hover:bg-white/10"
+                      className="w-full justify-start border-2 border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white transform hover:scale-105 transition-all duration-300 bg-transparent backdrop-blur-sm"
                       onClick={() => window.open("https://linkedin.com/in/vedantagnihotri", "_blank")}
                     >
                       <Linkedin className="w-5 h-5 mr-3" />
@@ -571,7 +571,7 @@ export default function Portfolio() {
 
                     <Button
                       variant="outline"
-                      className="w-full justify-start border-white/30 text-white hover:bg-white/10"
+                      className="w-full justify-start border-2 border-green-400 text-green-400 hover:bg-green-400 hover:text-white transform hover:scale-105 transition-all duration-300 bg-transparent backdrop-blur-sm"
                       onClick={() => window.open("https://github.com/VED2380", "_blank")}
                     >
                       <Github className="w-5 h-5 mr-3" />
@@ -588,7 +588,7 @@ export default function Portfolio() {
                     Get a detailed overview of my experience, skills, and achievements.
                   </p>
                   <Button
-                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
+                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border-0"
                     onClick={() => {
                       // In a real application, this would download the actual resume
                       alert("Resume download would start here")

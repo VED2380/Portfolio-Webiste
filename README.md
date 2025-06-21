@@ -28,7 +28,7 @@ Welcome to my **Personal Portfolio Website** – a fully responsive, minimal, an
 
 ## 📁 Folder Structure
 
-```bash
+\`\`\`bash
 📦 Portfolio-Website
 ├── public/
 ├── src/
@@ -45,4 +45,3 @@ Final Year CSE Student | ML & AI Enthusiast
 📸 Preview
 ![image](https://github.com/user-attachments/assets/d9a2d183-ff4c-4796-845a-2eb7234505fb)
 ![image](https://github.com/user-attachments/assets/c1e20bad-45e1-481f-951a-4317a77f5778)
-
