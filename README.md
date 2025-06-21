@@ -24,7 +24,7 @@ Welcome to my **Personal Portfolio Website** – a fully responsive, minimal, an
 - **EmailJS** – contact form integration
 - **Vercel** – deployment
 
-```
+\`\`\`
 📦 Portfolio-Website
 ├── public/                 # Static assets (favicon, images, etc.)
 ├── src/                   
@@ -39,7 +39,7 @@ Welcome to my **Personal Portfolio Website** – a fully responsive, minimal, an
 ├── postcss.config.js       # PostCSS config (for Tailwind)
 ├── package.json            # Project metadata and dependencies
 └── README.md               # Project overview and documentation
-```
+\`\`\`
 
 🧑‍💻 Author
 Vedant Agnihotri
