@@ -139,12 +139,7 @@ export default function Portfolio() {
   }
 
   const downloadResume = () => {
-    const link = document.createElement("a")
-    link.href = "/vedant-agnihotri-resume.pdf"
-    link.download = "Vedant_Agnihotri_Resume.pdf"
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
+    window.open("https://drive.google.com/drive/u/1/folders/1exwJbO6mlNXGkYVd0qTx5kN5zlynnD7H", "_blank")
   }
 
   return (
