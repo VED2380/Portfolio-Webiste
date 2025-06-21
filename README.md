@@ -1,30 +1,48 @@
-# Portfolio website
+# 🌐 Personal Portfolio Website
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+Welcome to my **Personal Portfolio Website** – a fully responsive, minimal, and modern web app to showcase my projects, skills, resume, and contact information. Built to reflect my personality, this site highlights my work in machine learning, AI, and full-stack development.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/ved2380jnv-gmailcoms-projects/v0-portfolio-website)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/VhhjAmurwy2)
+🔗 **Live Preview**: [Visit the Portfolio](https://v0-portfolio-website-chi-ebon.vercel.app/)
 
-## Overview
+---
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## 🚀 Features
 
-## Deployment
+- ⚡ Clean, responsive, and animated UI
+- 🧠 Sections for About, Skills, Projects, Resume, and Contact
+- 🌙 Dark mode toggle
+- 💼 Resume download and social links
+- 🧩 Easy to extend and customize
 
-Your project is live at:
+---
 
-**[https://vercel.com/ved2380jnv-gmailcoms-projects/v0-portfolio-website](https://vercel.com/ved2380jnv-gmailcoms-projects/v0-portfolio-website)**
+## 🛠️ Built With
 
-## Build your app
+- **React.js** – UI library
+- **Tailwind CSS** – utility-first styling
+- **Framer Motion** – animations
+- **EmailJS** – contact form integration
+- **Vercel** – deployment
 
-Continue building your app on:
+---
 
-**[https://v0.dev/chat/projects/VhhjAmurwy2](https://v0.dev/chat/projects/VhhjAmurwy2)**
+## 📁 Folder Structure
 
-## How It Works
+```bash
+📦 Portfolio-Website
+├── public/
+├── src/
+│   ├── components/
+│   ├── data/
+│   ├── pages/
+│   └── App.jsx
+├── tailwind.config.js
+├── package.json
+└── README.md
+🧑‍💻 Author
+Vedant Agnihotri
+Final Year CSE Student | ML & AI Enthusiast
+📸 Preview
+![image](https://github.com/user-attachments/assets/d9a2d183-ff4c-4796-845a-2eb7234505fb)
+![image](https://github.com/user-attachments/assets/c1e20bad-45e1-481f-951a-4317a77f5778)
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
