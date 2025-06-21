@@ -139,6 +139,15 @@ export default function Portfolio() {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" })
   }
 
+  const downloadResume = () => {
+    const link = document.createElement("a")
+    link.href = "/vedant-agnihotri-resume.pdf"
+    link.download = "Vedant_Agnihotri_Resume.pdf"
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       <Navigation />
@@ -589,10 +598,7 @@ export default function Portfolio() {
                   </p>
                   <Button
                     className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border-0"
-                    onClick={() => {
-                      // In a real application, this would download the actual resume
-                      alert("Resume download would start here")
-                    }}
+                    onClick={downloadResume}
                   >
                     <Download className="w-4 h-4 mr-2" />
                     Download Resume
