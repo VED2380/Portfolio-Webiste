@@ -8,7 +8,6 @@ import { Navigation } from "@/components/navigation"
 import { ContactForm } from "@/components/contact-form"
 import {
   Github,
-  Linkedin,
   Mail,
   ExternalLink,
   Brain,
@@ -571,15 +570,6 @@ export default function Portfolio() {
 
                     <Button
                       variant="outline"
-                      className="w-full justify-start border-2 border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white transform hover:scale-105 transition-all duration-300 bg-transparent backdrop-blur-sm"
-                      onClick={() => window.open("https://linkedin.com/in/vedantagnihotri", "_blank")}
-                    >
-                      <Linkedin className="w-5 h-5 mr-3" />
-                      LinkedIn Profile
-                    </Button>
-
-                    <Button
-                      variant="outline"
                       className="w-full justify-start border-2 border-green-400 text-green-400 hover:bg-green-400 hover:text-white transform hover:scale-105 transition-all duration-300 bg-transparent backdrop-blur-sm"
                       onClick={() => window.open("https://github.com/VED2380", "_blank")}
                     >
@@ -624,15 +614,6 @@ export default function Portfolio() {
                 aria-label="Visit GitHub profile"
               >
                 <Github className="w-5 h-5" />
-              </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-gray-400 hover:text-white"
-                onClick={() => window.open("https://linkedin.com/in/vedantagnihotri", "_blank")}
-                aria-label="Visit LinkedIn profile"
-              >
-                <Linkedin className="w-5 h-5" />
               </Button>
               <Button
                 variant="ghost"
