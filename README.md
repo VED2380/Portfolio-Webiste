@@ -27,8 +27,6 @@ Welcome to my **Personal Portfolio Website** – a fully responsive, minimal, an
 ---
 
 ## 📁 Folder Structure
-
-\`\`\`bash
 📦 Portfolio-Website
 ├── public/
 ├── src/
