@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Navigation } from "@/components/navigation"
 import { ContactForm } from "@/components/contact-form"
 import { ProjectCard } from "@/components/project-card"
-import { SkillsRadar } from "@/components/skills-radar"
+import { SkillsTree } from "@/components/skills-tree"
 import {
   Github,
   Mail,
@@ -64,14 +64,24 @@ export default function Portfolio() {
     {
       title: "Zucchini Leaf Instance Segmentation",
       description:
-        "Agricultural computer vision system for crop monitoring with comprehensive data annotation pipeline",
+        "Multi-condition agricultural computer vision system with comprehensive deep learning pipeline for crop monitoring",
       achievements: [
-        "High IoU, AP, and mAP metrics achieved",
-        "COCO format standardization implemented",
-        "Comprehensive data annotation pipeline on Roboflow",
-        "Supports real-time crop monitoring applications",
+        "96.53% mAP@0.5 detection accuracy (13-26% above industry standard)",
+        "95.71% segmentation quality with 87.94% localization precision",
+        "50-75% faster training efficiency (<50 epochs vs 100-200 standard)",
+        "Robust performance across varying environmental conditions",
+        "COCO format standardization with comprehensive annotation pipeline",
       ],
-      technologies: ["Python", "YOLOv8", "Roboflow", "Albumentations", "Computer Vision", "Instance Segmentation"],
+      technologies: [
+        "Python",
+        "YOLOv8",
+        "PyTorch",
+        "Roboflow",
+        "Albumentations",
+        "Computer Vision",
+        "Instance Segmentation",
+      ],
+      github: "https://github.com/VED2380/Zucchini-Leaf-Instance-Segmentation",
       featured: false,
     },
   ]
@@ -238,21 +248,33 @@ export default function Portfolio() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div className="space-y-4">
-                <h3 className="text-2xl font-heading font-semibold text-teal-400">My Story</h3>
+                <h3 className="text-2xl font-heading font-semibold text-teal-400">
+                  My Journey in AI and Computer Vision
+                </h3>
                 <p className="text-slate-300 leading-relaxed">
-                  As a 4th-year Computer Science student at SASTRA University, Tamil Nadu, my passion for machine
-                  learning was ignited during my internship at Elevate Labs in Bangalore. Working on real-time American
-                  Sign Language gesture recognition opened my eyes to the transformative power of computer vision in
-                  creating accessible technology.
+                  Picture this: a curious student in Tamil Nadu, tinkering with code late into the night, suddenly
+                  realizing that technology could bridge gaps in human communication. That's where my passion for
+                  machine learning truly sparked—as a fresh Computer Science graduate from SASTRA University (class of
+                  June 2025), my world changed during my internship at Elevate Labs in Bangalore. There, I dove
+                  headfirst into building a real-time American Sign Language gesture recognition system using MediaPipe
+                  and CNN architectures. Watching the app translate hand movements into text in real-time wasn't just a
+                  technical win; it revealed the profound impact of computer vision in making technology accessible to
+                  everyone, from the hearing impaired to everyday users.
                 </p>
                 <p className="text-slate-300 leading-relaxed">
-                  This experience led me to pursue advanced research at IIT Ropar, where I'm currently working on
-                  agricultural computer vision systems. My commitment to continuous learning and strong time management
-                  skills have enabled me to balance academic excellence with hands-on research experience.
+                  This breakthrough moment fueled my drive for more. Eager to tackle real-world challenges, I jumped
+                  into advanced research at IIT Ropar, where I'm currently leading an agricultural computer vision
+                  project on zucchini leaf instance segmentation. By crafting an end-to-end data pipeline with Roboflow
+                  and Albumentations, and fine-tuning YOLOv8, I've pushed the model to achieve 96% mAP at IoU 0.50 and
+                  84% for mAP50-95—metrics that prove how AI can revolutionize crop monitoring for farmers facing
+                  unpredictable challenges. Balancing this with my studies wasn't easy, but my commitment to continuous
+                  learning and sharp time management skills turned late-night debugging sessions into triumphs of
+                  academic and research excellence.
                 </p>
                 <p className="text-slate-300 leading-relaxed">
-                  I believe in building intelligent systems that solve real-world problems, whether it's helping doctors
-                  diagnose respiratory conditions or assisting farmers monitor their crops more effectively.
+                  At my core, I believe in crafting intelligent systems that make a tangible difference—whether it's
+                  aiding doctors in diagnosing respiratory conditions through a PyTorch-based classification model with
+                  81.6% accuracy, or empowering farmers with precise crop insights.
                 </p>
               </div>
 
@@ -363,39 +385,10 @@ export default function Portfolio() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-heading font-bold text-white mb-4">Technical Skills</h2>
-            <p className="text-xl text-slate-300">Proficiency levels in key technologies</p>
+            <p className="text-xl text-slate-300">Comprehensive overview of my technical expertise</p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <SkillsRadar />
-            </div>
-            <div className="space-y-6">
-              {[
-                { name: "Python", level: 90, description: "Primary language for ML/AI development" },
-                { name: "TensorFlow", level: 85, description: "Deep learning model development and deployment" },
-                { name: "PyTorch", level: 85, description: "Research-focused deep learning framework" },
-                { name: "C++", level: 80, description: "System programming and optimization" },
-                { name: "JavaScript", level: 75, description: "Full-stack web development" },
-                { name: "YOLOv8", level: 80, description: "Object detection and instance segmentation" },
-              ].map((skill, index) => (
-                <div key={index} className="space-y-2">
-                  <div className="flex justify-between items-center">
-                    <span className="text-white font-medium">{skill.name}</span>
-                    <span className="text-teal-400 font-semibold">{skill.level}%</span>
-                  </div>
-                  <div className="skill-bar">
-                    <div
-                      className="skill-progress"
-                      style={{ width: `${skill.level}%` }}
-                      aria-label={`${skill.name} proficiency: ${skill.level}%`}
-                    ></div>
-                  </div>
-                  <p className="text-sm text-slate-400">{skill.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <SkillsTree />
         </div>
       </section>
 
@@ -407,12 +400,26 @@ export default function Portfolio() {
             <p className="text-xl text-slate-300">Showcasing innovative solutions in ML and computer vision</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div key={index} className={project.featured ? "md:col-span-2 lg:col-span-2" : ""}>
-                <ProjectCard {...project} />
-              </div>
-            ))}
+          <div className="space-y-8">
+            {/* Featured Projects Row */}
+            <div className="grid md:grid-cols-2 gap-8">
+              {projects
+                .filter((project) => project.featured)
+                .map((project, index) => (
+                  <ProjectCard key={index} {...project} />
+                ))}
+            </div>
+
+            {/* Non-Featured Projects Row - Same size as featured */}
+            <div className="grid md:grid-cols-2 gap-8 justify-center">
+              {projects
+                .filter((project) => !project.featured)
+                .map((project, index) => (
+                  <div key={index} className="max-w-none">
+                    <ProjectCard {...project} />
+                  </div>
+                ))}
+            </div>
           </div>
 
           <div className="text-center mt-12">
