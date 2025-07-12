@@ -90,7 +90,7 @@ export default function Portfolio() {
     {
       title: "Summer Research Intern",
       company: "IIT Ropar",
-      period: "June 2024 - Present",
+      period: "June 2025 - Present",
       location: "Punjab, India",
       description:
         "Working on advanced computer vision research focusing on instance segmentation for agricultural applications",
@@ -105,7 +105,7 @@ export default function Portfolio() {
     {
       title: "Machine Learning Intern",
       company: "Elevate Labs",
-      period: "Dec 2023 - Feb 2024",
+      period: "May 2025 - Apr 2025",
       location: "Bangalore, India",
       description:
         "Developed real-time computer vision applications for accessibility, focusing on ASL gesture recognition",
